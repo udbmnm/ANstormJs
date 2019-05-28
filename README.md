@@ -1,9 +1,12 @@
-ANS Angularjs NstormJs web framework v 0.4.2
+ANS Angularjs NstormJs web framework v 0.4.3
 =========
+
+此版本鉴于express更新太快已经停止维护，仅供学习 如有兴趣可以关注我的：
+
+koa项目 https://github.com/ckken/koa-project
 
 Q.js流程化编程模型
 
-DEMO： http://ans.wvovo.com/
 
 安装方法：`npm install`
 
@@ -22,7 +25,7 @@ DEMO： http://ans.wvovo.com/
 
 重构mongoose 数据结构 创建公用mongoDB类
 
-更新 angular.js 1.2.5
+更新 angular.js 1.2.9
 
 下一步：使用 seajs 作为加载器重新构造 ， 重构数据结构，重构用户交互界面
 

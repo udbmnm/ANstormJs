@@ -4,7 +4,7 @@ var ANS  ={
         global.C = require(this.conf+'/config').init(root);
         global.M = {};
         M.express = require('express');
-        M.mongoskin = require('mongoskin');//mongo
+        //M.mongoskin = require('mongoskin');//mongo
         M.nodemailer = require('nodemailer');//邮件
         global.Q = require('q');//延迟执行
         //global.when = require('when');//延迟执行
@@ -32,15 +32,7 @@ var ANS  ={
     },
 
     mongo:function(app){
-/*        var mongo = M.mongoskin;
-        global.D = mongo.db(C.mongodb,{safe:false});
-
-        app.on('close', function (err) {
-            mongo.close();
-        });*/
-
         var mongoose = require('mongoose');
-        //var Schema = mongoose.Schema;
         mongoose.connect(C.mongodb);
         app.on('close', function(err) {
             mongoose.disconnect(callback);
